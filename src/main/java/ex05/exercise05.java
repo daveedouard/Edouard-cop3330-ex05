@@ -12,10 +12,12 @@ public class exercise05 {
         Scanner input = new Scanner(System.in);
 
         System.out.print("What is the first number? ");
-        int first = input.nextInt();
+        String firststr = input.nextLine();
+        int first = Integer.parseInt(firststr);
 
         System.out.print("What is the second number? ");
-        int second = input.nextInt();
+        String secondstr = input.nextLine();
+        int second = Integer.parseInt(secondstr);
 
         int sum = first+second;
         int difference = first-second;
